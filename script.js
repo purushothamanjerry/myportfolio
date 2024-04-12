@@ -77,3 +77,20 @@ $(document).ready(function(){
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+
+    menuBtn.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+
+    // Close the menu when a link is clicked
+    const menuLinks = document.querySelectorAll('.menu-link');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            menu.classList.remove('active');
+        });
+    });
+});

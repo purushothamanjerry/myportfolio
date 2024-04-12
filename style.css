@@ -100,7 +100,7 @@ section .title::after{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -130,6 +130,53 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
     cursor: pointer;
+}
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+    .navbar .max-width {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        display: none; /* Hide the menu by default */
+        width: 100%;
+        text-align: center;
+        margin-top: 15px; /* Adjust as needed */
+    }
+
+    .navbar .menu.active {
+        display: block; /* Show the menu when active */
+    }
+
+    .navbar .menu li {
+        display: block;
+        margin: 10px 0; /* Adjust as needed */
+    }
+
+    .menu-btn {
+        display: block; /* Show the menu button */
+        margin-right: 15px; /* Adjust as needed */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px;
+        z-index: 999;
+    }
+    .menu.active li {
+        margin: 10px 0;
+    }
 }
 
 /* menu btn styling */
@@ -171,7 +218,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("https://images.pexels.com/photos/4360449/pexels-photo-4360449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center;
+    background-color: #2c264e;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -1085,7 +1132,7 @@ footer .wave#wave4
         font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 70px;
+        font-size: 35px;
     }
     .home .home-content .text-3{
         font-size: 35px;
@@ -1144,7 +1191,7 @@ footer .wave#wave4
 
 @media (max-width: 500px) {
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 35px;
     }
     .home .home-content .text-3{
         font-size: 27px;
