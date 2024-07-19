@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 <body>
  <div id="preloader"></div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Purushothaman <span>B.E</span></a></div>
+            <div class="logo"><a href="#">Purushothaman <span>S</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -28,10 +29,7 @@
                 <li><a href="#teams" class="menu-btn">Project</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+            
     </nav>
 
     <!-- home section start -->
@@ -127,9 +125,8 @@ I am a 21-year-old individual seeking employment as a Java Developer or Software
                 <div class="column left">
                     <div class="text">My Activity & Acheivements </div>
                     <p>College Activities:
-College Name: [KSR IET]
 Start Date: 2021
-Description: As an engineering student at [College Name], I have actively participated in various academic and extracurricular activities that have enriched my learning experience and contributed to my personal and professional growth. These activities include:
+Description: As an engineering student at [KSR IET], I have actively participated in various academic and extracurricular activities that have enriched my learning experience and contributed to my personal and professional growth. These activities include:
                         <br><br><strong>Computer Science and Engineering (CSE) Program:</strong> Since joining the CSE program, I have been passionate about coding and software development. I have engaged deeply in my coursework, focusing on gaining a strong foundation in programming languages such as Java, Php, and C, as well as exploring advanced topics in data structures, algorithms, and software engineering principles.                        <br><br><strong>Coding Competitions and Hackathons:</strong> I have enthusiastically participated in coding competitions and hackathons both within and outside the college. These events have provided me with valuable opportunities to apply my coding skills to solve real-world problems, collaborate with peers, and enhance my problem-solving abilities under tight deadlines.
 
                         <br> 
@@ -217,29 +214,24 @@ Description: As an engineering student at [College Name], I have actively partic
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
+                <div class="text">Message me</div>
+                   <form action="mail.php" method="post">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" name="name" placeholder="Name" required>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                        <div class="field email">
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
+                    <div class="field textarea">
+                        <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
-        </div>
+            </div>
     </section>
 
     <!-- footer section start -->
